@@ -26,7 +26,28 @@ body {
 
 
 #column1 img {
-    padding: 20px !important; 
-    border-style: double !important; 
-    border-color: pink !important; 
+    padding: 40px;
+    border-style: double;
+    border-color: pink; 
+    border-width: 3px;
+    margin-left: 35%;
+    margin-top: 20px;
+    padding-bottom: 400px;
+
+}
+
+#column2 {
+    border-style: double;
+    border-color: pink; 
+    border-width: 3px;
+    padding: 40px;
+    margin-right: 35%;
+    margin-top: 20px;
+    padding-bottom: 400px;
+}
+
+#column2 p {
+    font-family: Impact, Charcoal, sans-serif;
+    color: magenta;
+    font-size: 30px ;
 }
