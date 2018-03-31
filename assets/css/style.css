@@ -27,38 +27,57 @@ body {
 
 #column1 img {
     padding: 40px;
-    border-style: double;
-    border-color: pink; 
-    border-width: 3px;
-    margin-left: 25%;
-    margin-top: 20px;
-    padding-bottom: 400px;
-    width: 25%;
+    margin: 10px auto;
+    display: block;
+    width: 300px;
 }
 
 #column1 {
     vertical-align: top;
-    padding-left: 300px;
+    width: 50%;
+    border-style: double;
+    border-color: pink; 
+    border-width: 3px;
 }
 
 #column2 {
     border-style: double;
     border-color: pink; 
     border-width: 3px;
-    margin-right: 200px;
-    margin-top: 20px;
-    padding-bottom: 400px;
-    width: 25%;
+    width: 50%;
     vertical-align: top;
 }
 
 #column2 p {
     font-family: Impact, Charcoal, sans-serif;
     color: magenta;
+    font-size: 20px;
+    padding: 20px;
+}
+
+#column2 h3 {
+    font-family: Impact, Charcoal, sans-serif;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+}
+
+#column2 h2 {
+    font-family: Impact, Charcoal, sans-serif;
+    color: lightseagreen;
     font-size: 30px;
+    padding: 25px;
+}
+
+#column2 h1 {
+    font-family: Impact, Charcoal, sans-serif;
+    color: magenta;
+    font-size: 40px;
     padding: 40px;
+    text-align: center;
 }
 
 table {
-    width: 100%;
+    width: 55%;
+    margin: 50px auto;
 }

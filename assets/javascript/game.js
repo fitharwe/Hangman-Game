@@ -1,7 +1,6 @@
 var wins = 0;
 var losses = 0;
 
-var guessesleft = 9;
 
 var currentword = document.getElementById("display-word");
 var guesses = document.getElementById("guesses");
@@ -42,11 +41,13 @@ function Hangman() {
         "Dorothy",
         "Blanche",
         "Rose",
-	]
+        "Stanley",
+        "Friend",
+        ]
 
 	this.word = this.wordList[Math.floor(Math.random() * this.wordList.length)];
 	this.guesses = [];
-	this.errors = 0;
+	this.remainingchar = this.word.length;
 	this.visibleLetters = [];
 	this.gameOver = false;
 	this.alertLines = emptyAlert;
@@ -66,10 +67,10 @@ Hangman.prototype.checkGuess = function(char) {
 		}
 	}
 	if (!isInWord) {
-		this.errors++;
+		this.remainingchar--;
 	}
 
-	if (this.errors >= guessesleft) {
+	if (this.remainingchar == 0) {
 		losses++;
 		this.alertLines = youLose;
 		this.gameOver = true;
@@ -102,23 +103,23 @@ Hangman.prototype.updatePageData = function() {
 	}
 	guesses.textContent = tempString;
 
-	tempString = this.errors + " / " + guessesleft;
+	tempString = this.remainingchar;
 	for (var i = tempString.length; i < 32; i++) {
 		tempString += " ";
 	}
-	remaining.textContent = tempString;
+	remaining.textContent = "Guesses Remaining: " + tempString;
 
 	tempString = wins + "";
 	for (var i = tempString.length; i < 45; i++) {
 		tempString += " ";
 	}
-	totalWins.textContent = tempString;
+	totalWins.textContent = "Wins " + tempString;
 
 	tempString = losses + "";
 	for (var i = tempString.length; i < 43; i++) {
 		tempString += " ";
 	}
-	totalLosses.textContent = tempString;
+	totalLosses.textContent = "Losses " + tempString;
 
 
 }
