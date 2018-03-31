@@ -77,6 +77,15 @@ body {
     text-align: center;
 }
 
+#column1 h1 {
+    font-family: "Courier New", Courier, monospace;
+    font-style: italic;
+    color: lightpink;
+    font-size: 40px;
+    padding: 40px;
+    text-align: center;
+}
+
 table {
     width: 55%;
     margin: 50px auto;
