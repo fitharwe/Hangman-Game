@@ -35,7 +35,7 @@ document.onkeyup = function(event) {
 
 function Hangman() {
 	this.wordList = [
-        "Saint Olaf",
+        "SaintOlaf",
         "Miami",
         "Sicily",
         "Sophia",
