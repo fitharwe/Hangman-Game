@@ -60,7 +60,7 @@ Hangman.prototype.checkGuess = function(char) {
 
 	var isInWord = false;
 	for (var i = 0; i < this.word.length; i++) {
-		if (this.word.charAt(i) === char) {
+		if (this.word.charAt(i).toUpperCase () === char.toUpperCase()) {
 			isInWord = true;
 			this.visibleLetters[i] = true;
 		}
