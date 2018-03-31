@@ -30,24 +30,35 @@ body {
     border-style: double;
     border-color: pink; 
     border-width: 3px;
-    margin-left: 35%;
+    margin-left: 25%;
     margin-top: 20px;
     padding-bottom: 400px;
+    width: 25%;
+}
 
+#column1 {
+    vertical-align: top;
+    padding-left: 300px;
 }
 
 #column2 {
     border-style: double;
     border-color: pink; 
     border-width: 3px;
-    padding: 40px;
-    margin-right: 35%;
+    margin-right: 200px;
     margin-top: 20px;
     padding-bottom: 400px;
+    width: 25%;
+    vertical-align: top;
 }
 
 #column2 p {
     font-family: Impact, Charcoal, sans-serif;
     color: magenta;
-    font-size: 30px ;
+    font-size: 30px;
+    padding: 40px;
+}
+
+table {
+    width: 100%;
 }

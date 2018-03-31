@@ -7,7 +7,6 @@
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css"/>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
-    <script src="assets/javascript/game.js"></script>
 </head>
 <body>
     <div class="container" id="header">
@@ -21,21 +20,32 @@
         <img src="assets\images\hangman.jpg" alt="Title2">
     </div>
 
-<div class="container" id="content">
-    <div class="row">
-        <div class="column" id="column1">
+<td class="container" id="table">
+    <table>
+        <tbody>
+            <tr>
+        <td id="column1">
             <img src="assets\images\estelle.JPG" alt="Estelle">
-        </div>
-        <div class="column" id="column2">
+        </td>
+        <td id="column2">
            <p>Press any key to start!</p>
-           <p>Wins</p>
-           <p>Losses</p>
-           <p>Current Word</p>
-           <p>Number of Guesses Remaining</p>
-           <p>Letters Already Guessed</p>
-        <div class="column"></div>
-      </div>
+           <p id="display-word"></p>
+           <p id="totalwins">Wins</p>
+           <p id="totallosses">Losses</p>
+           <div id="game-div" class="panel">
+            <div id="word-display">
+                <p id="display-word">Current Word</p>
+            </div>
+        
+           <p id="remaining-guesses">Number of Guesses Remaining</p>
+           <p id="guesses">Letters Already Guessed</p>
+        </td>
+        </tr>
+        </tbody>
+    </table>
  
-</div> 
+</td> 
+
+        <script src="assets/javascript/game.js"></script>
 </body>
 </html>
